@@ -1,0 +1,49 @@
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.skillLegend {
+  margin: 50px auto 0 auto;
+  list-style: none;
+}
+
+.skillLegend li {
+  display: inline-block;
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  /* height: 2rem;
+  width: 3rem; */
+  border-radius: 8px;
+  border-color: var(--colorGrey300);
+  background-color: var(--colorGrey25);
+}
+
+.gridcontainer {
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.novice {
+  color: var(--colorGreen);
+}
+.comfortable {
+  color: var(--colorYellow);
+}
+.adept {
+  color: var(--colorDarkRed);
+}
+
+.expert {
+  color: var(--colorMagenta);
+}
+
+.master {
+  color: var(--colorBlue);
+}

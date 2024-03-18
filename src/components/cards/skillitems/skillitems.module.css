@@ -1,0 +1,42 @@
+.griditem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 180px;
+  height: 120px;
+  border-width: 6px;
+  border-color: var(--colorGrey300);
+  border-radius: 16px;
+}
+
+.griditem i {
+  font-size: 3rem;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.griditem h5 {
+  text-align: center;
+  overflow: visible;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.novice {
+  color: var(--colorGreen);
+}
+.comfortable {
+  color: var(--colorYellow);
+}
+.adept {
+  color: var(--colorDarkRed);
+}
+
+.expert {
+  color: var(--colorMagenta);
+}
+
+.master {
+  color: var(--colorBlue);
+}

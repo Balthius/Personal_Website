@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --fontHero: "Inter", "Helvetica", "Arial", sans-serif;
+  --fontBody: "Inter", "Helvetica", "Arial", sans-serif;
+  --fontQuote: "DM Serif Display", "Palatino", "Georgia", serif;
+
+  /* Custom colors */
+  /* purple */
+  --colorCustomDarkPurple: #2f0a28;
+  --colorCustomIndigo: #420165;
+  --colorCustomRoseQuartz: #b08ea2;
+
+  /* red */
+  --colorCustomBlackBean: #3b0d11;
+  --colorCustomCarmine: #950e20;
+  --colorCustomCoralPink: #e8998d;
+
+  /* blue */
+  --colorCustomRichBlack: #04151f;
+  --colorCustomRussianViolet: #0b0033;
+  --colorCustomIndigoDye: #1e4971;
+  --colorCustomCelestialBlue: #5299d3;
+
+  /* green */
+  --colorCustomMidnightGreen: #0b5563;
+  --colorCustomTeaGreen: #c5efcb;
+
+  /* yellow/white */
+  --colorCustomWheat: #efd6ac;
+  --colorCustomAlabaster: #f1f2eb;
+
+  /* Saturated colors */
+  --colorSky: #5ac8fa;
+  --colorBlue: #3366ff;
+  --colorPurple: #563cf1;
+  --colorMagenta: #a021cc;
+  --colorDarkRed: #d93229;
+  --colorSaturatedRed: #ff3b30;
+  --colorGreen: #00aa55;
+  --colorYellow: #ffcc00;
+
+  /* Muted colors */
+  --colorBrown: #795548;
+  --colorPalm: #20352e;
+  --colorAsparagus: #435244;
+  --colorKermit: #588157;
+  --colorGolden: #e9c46a;
+  --colorSandy: #f4a261;
+  --colorPaleRed: #f7d6d4;
+  --colorBourbon: #b06d46;
+  --colorFlame: #b55e48;
+  --colorAstronaut: #19445e;
+  --colorCalypso: #416c86;
+  --colorHazel700: #7b6e4a;
+  --colorGunmetal700: #424c42;
+  --colorDarkRedHover: #38201f;
+
+  /* greyscale */
+  --colorGrey0: #ffffff;
+  --colorGrey25: #fafafa;
+  --colorGrey50: #f5f5f5;
+  --colorGrey100: #ebebeb;
+  --colorGrey300: #b5b5b8;
+  --colorGrey500: #5d5d5d;
+  --colorGrey600: #404040;
+  --colorGrey700: #323132;
+  --colorGrey800: #262627;
+  --colorGrey900: #1c1c1d;
+
+  --borderWidthRegular: 4px;
+  --borderWidthThin: 2px;
+  --borderRadiusThick: 6px;
+
+  --shadowBoxRegular: 0px 8px 16px rgba(0, 0, 0, 0.16);
+  --shadowBoxSmall: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  --shadowBoxLarge: 0px 8px 24px rgba(0, 0, 0, 0.32);
+  /* ################################# Branding Style Guide ################################# */
+
+  /*      ########################## Default/Shared ##########################*/
+
+  /* Content */
+  --colorContentPlaceholder: var(--colorCustomRoseQuartz);
+  --colorContentHint: var(--colorCustomWheat);
+  --colorContentDisabled: var(--colorGrey300);
+  --colorContentNegative: var(--colorSaturatedRed);
+  --colorContentWarning: var(--colorYellow);
+  --colorContentSuccess: var(--colorGreen);
+
+  /* Interactive*/
+  --colorHoverNegative: var(--colorDarkRed);
+  --colorPressedNegative: var(--colorSaturatedRed);
+
+  --colorHoverSuccess: var(--colorKermit);
+  --colorPressedSuccess: var(var(--colorCustomMidnightGreen));
+
+  /* Border */
+  --colorBorderError: var(--colorSaturatedRed);
+  --colorBorderSuccess: var(--colorGreen);
+
+  /* Background*/
+  --colorBackgroundError: var(var(--colorCustomCoralPink));
+  --colorBackgroundSuccess: var(var(--colorCustomTeaGreen));
+
+  /*      ############################ Light Mode ############################# */
+  /* Base */
+  /* Using these colors for text */
+
+  /* On Lighter background */
+  --colorTextPrimary: var(--colorGrey600);
+
+  /* On Darker background */
+
+  --colorTextSecondary: var(--colorGrey100);
+
+  /* Content */
+  /* using these for menus, buttoms, etc */
+  --colorContentPrimary: var(--colorGrey600);
+  --colorContentSecondary: var(--colorGrey300);
+
+  /* Interactive*/
+  /* things that can be clicked, hovered, etc */
+  --colorHoverAccent: var(--colorCustomRoseQuartz);
+  --colorHoverPrimary: var(--colorGrey500);
+  --colorPressedAccent: var(--colorBourbon);
+  --colorPressedPrimary: var(--colorGrey300);
+  --colorPressedSecondary: var(--colorGrey900);
+
+  /* Line */
+  --colorLinePrimary: var(--colorCustomRichBlack);
+  --colorLineAccent: var(--colorCustomCelestialBlue);
+
+  /* Border */
+  --colorBorderPrimary: var(--colorGrey600);
+  --colorBorderSecondary: var(--colorGrey25);
+
+  --colorBorderFocused: var(--colorGrey600);
+  --colorBorderSecondaryFocused: var(--colorGrey100);
+
+  /* Background */
+  --colorBackgroundPrimary: var(--colorGrey25);
+  --colorBackgroundSecondary: var(--colorGrey50);
+  --colorBackgroundAlt: var(--colorGrey300);
+
+  /* Section-BG */
+  --colorSectionBackground: var(--colorGrey800);
+  --colorSectionBackgroundSecondary: var(--colorGrey100);
+
+  /* TODO add variable for mobile and desktop header heights */
+  --navBarMobileHeight: 220px;
+  --navBarDesktopHeight: 120px;
+}
+
+/*      ############################ Alternate: Dark Mode ############################# */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Base */
+
+    /* Content */
+
+    /* Interactive*/
+
+    /* Line */
+
+    /* Border */
+
+    /* Background */
+
+    /* Section-BG */
+  }
+}
+
+/**  =====================
+    CSS Variables End
+==========================**/
+
+/* Reset Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontBody);
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: var(--colorTextPrimary);
+  font-weight: 400;
+  background-color: var(--colorBackgroundAlt);
+  position: relative;
+}
+*:focus {
+  outline: none;
+}
+
+/* End Reset */
+.page-container {
+  margin: auto;
+  min-height: 100vh;
+  background: var(--colorBackgroundPrimary);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-container {
+  min-height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-container {
+    margin-top: var(--navBarMobileHeight);
+  }
+}
+
+.novice {
+  color: var(--colorGreen);
+}
+.comfortable {
+  color: var(--colorYellow);
+}
+.adept {
+  color: var(--colorDarkRed);
+}
+
+.expert {
+  color: var(--colorMagenta);
+}
+
+.master {
+  color: var(--colorBlue);
+}
