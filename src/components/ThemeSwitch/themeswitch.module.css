@@ -1,0 +1,6 @@
+.icon {
+  color: var(--colorTextPrimary);
+  font-size: 3rem;
+  margin: 10px;
+  float: right;
+}

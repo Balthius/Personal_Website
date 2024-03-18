@@ -292,6 +292,7 @@ const SkillsPage = () => {
         <ul>
           <li className={styles.novice}>
             <button
+              className={styles.skillbutton}
               onClick={() =>
                 setSkillList(skills.filter((skill) => skill.rank == "novice"))
               }
@@ -301,6 +302,7 @@ const SkillsPage = () => {
           </li>
           <li className={styles.comfortable}>
             <button
+              className={styles.skillbutton}
               onClick={() =>
                 setSkillList(
                   skills.filter((skill) => skill.rank == "comfortable")
@@ -312,6 +314,7 @@ const SkillsPage = () => {
           </li>
           <li className={styles.adept}>
             <button
+              className={styles.skillbutton}
               onClick={() =>
                 setSkillList(skills.filter((skill) => skill.rank == "adept"))
               }
@@ -321,6 +324,7 @@ const SkillsPage = () => {
           </li>
           <li className={styles.expert}>
             <button
+              className={styles.skillbutton}
               onClick={() =>
                 setSkillList(skills.filter((skill) => skill.rank == "expert"))
               }
@@ -330,6 +334,7 @@ const SkillsPage = () => {
           </li>
           <li className={styles.master}>
             <button
+              className={styles.skillbutton}
               onClick={() =>
                 setSkillList(skills.filter((skill) => skill.rank == "master"))
               }
@@ -338,7 +343,12 @@ const SkillsPage = () => {
             </button>
           </li>
           <li>
-            <button onClick={() => setSkillList(skills)}>All</button>
+            <button
+              className={styles.skillbutton}
+              onClick={() => setSkillList(skills)}
+            >
+              All
+            </button>
           </li>
         </ul>
       </div>

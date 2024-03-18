@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./css/globals.css";
+import { Providers } from "./Providers";
 
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import ThemeSwitch from "@/components/ThemeSwitch/ColorModeSwitcher";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="stylesheet"
@@ -27,11 +29,14 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <div className="page-container">
-          <Navbar />
-          <main className="content-container">{children}</main>
-          <Footer />
-        </div>
+        <Providers>
+          <div className="page-container">
+            <Navbar />
+            <ThemeSwitch />
+            <main className="content-container">{children}</main>
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );

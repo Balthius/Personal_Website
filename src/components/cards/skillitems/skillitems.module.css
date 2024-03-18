@@ -5,9 +5,14 @@
   padding: 0.5rem;
   width: 180px;
   height: 120px;
-  border-width: 6px;
-  border-color: var(--colorGrey300);
+  border-width: 4px;
+  border-color: var(--colorBorderPrimary);
   border-radius: 16px;
+  box-shadow: var(--shadowBoxSmall);
+}
+
+.griditem:hover {
+  border-width: 6px;
 }
 
 .griditem i {

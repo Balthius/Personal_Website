@@ -77,10 +77,13 @@
   --shadowBoxRegular: 0px 8px 16px rgba(0, 0, 0, 0.16);
   --shadowBoxSmall: 0px 8px 24px rgba(0, 0, 0, 0.08);
   --shadowBoxLarge: 0px 8px 24px rgba(0, 0, 0, 0.32);
+
+  /* TODO add variable for mobile and desktop header heights */
+  --navBarMobileHeight: 220px;
+  --navBarDesktopHeight: 120px;
   /* ################################# Branding Style Guide ################################# */
 
   /*      ########################## Default/Shared ##########################*/
-
   /* Content */
   --colorContentPlaceholder: var(--colorCustomRoseQuartz);
   --colorContentHint: var(--colorCustomWheat);
@@ -103,11 +106,12 @@
   /* Background*/
   --colorBackgroundError: var(var(--colorCustomCoralPink));
   --colorBackgroundSuccess: var(var(--colorCustomTeaGreen));
+}
+/*      ############################ Light Mode ############################# */
+/* Base */
+/* Using these colors for text */
 
-  /*      ############################ Light Mode ############################# */
-  /* Base */
-  /* Using these colors for text */
-
+.light {
   /* On Lighter background */
   --colorTextPrimary: var(--colorGrey600);
 
@@ -147,30 +151,39 @@
   /* Section-BG */
   --colorSectionBackground: var(--colorGrey800);
   --colorSectionBackgroundSecondary: var(--colorGrey100);
-
-  /* TODO add variable for mobile and desktop header heights */
-  --navBarMobileHeight: 220px;
-  --navBarDesktopHeight: 120px;
 }
-
 /*      ############################ Alternate: Dark Mode ############################# */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Base */
+.dark {
+  /* Base */
 
-    /* Content */
+  --colorTextPrimary: var(--colorGrey100);
+  --colorTextSecondary: var(--colorGrey600);
 
-    /* Interactive*/
+  /* Content */
+  --colorContentPrimary: var(--colorGrey300);
+  --colorContentSecondary: var(--colorGrey600);
+  /* Interactive*/
+  --colorHoverAccent: var(--colorCustomRoseQuartz);
+  --colorHoverPrimary: var(--colorGrey500);
+  --colorPressedAccent: var(--colorBourbon);
+  --colorPressedPrimary: var(--colorGrey300);
+  --colorPressedSecondary: var(--colorGrey900);
+  /* Line */
+  --colorLinePrimary: var(--colorGrey100);
+  --colorLineAccent: var(--colorCustomCelestialBlue);
 
-    /* Line */
+  /* Border */
+  --colorBorderPrimary: var(--colorGrey0);
+  --colorBorderSecondary: var(--colorGrey600);
 
-    /* Border */
-
-    /* Background */
-
-    /* Section-BG */
-  }
+  --colorBorderFocused: var(--colorGrey100);
+  --colorBorderSecondaryFocused: var(--colorGrey600);
+  /* Background */
+  --colorBackgroundPrimary: var(--colorGrey900);
+  --colorBackgroundSecondary: var(--colorGrey300);
+  --colorBackgroundAlt: var(--colorGrey25);
+  /* Section-BG */
 }
 
 /**  =====================
@@ -209,6 +222,7 @@ body {
 
 .content-container {
   min-height: 80vh;
+  margin: 80px;
 }
 
 @media (max-width: 768px) {

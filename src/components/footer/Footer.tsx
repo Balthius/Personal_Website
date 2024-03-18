@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./footer.module.css";
+import ThemeSwitch from "../ThemeSwitch/ColorModeSwitcher";
 const Footer = () => {
   const external_links = [
     {
@@ -23,7 +24,6 @@ const Footer = () => {
   return (
     <div>
       <div className={styles.container}>
-        {/* Insert New Col Here */}
         {/* Insert New Col Here */}
         <div className={styles.footercol}>
           {/* External Links */}

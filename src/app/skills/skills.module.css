@@ -9,16 +9,14 @@
   list-style: none;
 }
 
-.skillLegend li {
+.skillLegend ul li {
   display: inline-block;
   margin: 20px;
   font-size: 1.5rem;
   font-weight: 800;
-  /* height: 2rem;
-  width: 3rem; */
-  border-radius: 8px;
-  border-color: var(--colorGrey300);
-  background-color: var(--colorGrey25);
+  height: 2rem;
+  background-color: var(--colorBackgrounPrimary);
+  box-shadow: var(--shadowBoxRegular);
 }
 
 .gridcontainer {
@@ -30,6 +28,12 @@
   flex-wrap: wrap;
 }
 
+.skillbutton {
+  border-color: var(--colorBorderPrimary);
+  border-radius: 16px;
+  border-width: 2px;
+  padding: 8px 16px;
+}
 .novice {
   color: var(--colorGreen);
 }
