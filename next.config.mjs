@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/Personal_Website",
+  output: "export", // <=== enables static exports
+  reactStrictMode: true,
   async rewrites() {
     return [
       { source: "/project_1", destination: "/projects/Project_1_movies.html" },
