@@ -35,7 +35,7 @@ const ProjectsPage = () => {
       path: "/project_2",
       image: "/projects/Project_2_screenshot.png",
       description:
-        "By taking some open-source map data about new zealand, what general exploration, and sanitation can I perform? What can I observe based on the data? Is there any suggestions I can make to improve the usability of the data in it's raw form?"
+        "By taking some open-source map data about new zealand, what general exploration, and sanitation can I perform? What can I observe based on the data? Is there any suggestions I can make to improve the usability of the data in it&apos;s raw form?"
     },
     {
       title: "Magic the gathering Exploration in RStudio",
@@ -49,7 +49,7 @@ const ProjectsPage = () => {
       path: "/project_4",
       image: "/projects/Project_4_screenshot.png",
       description:
-        "In a Stroop task, participants are presented with a list of words, with each word displayed in a color of ink. The participant’s task is to say out loud the color of the ink in which the word is printed. The task has two conditions: a congruent words condition, and an incongruent words condition. In the congruent words condition, the words being displayed are color words whose names match the colors in which they are printed: for example RED, BLUE. In the incongruent words condition, the words displayed are color words whose names do not match the colors in which they are printed: for example PURPLE, ORANGE. In each case, we measure the time it takes to name the ink colors in equally-sized lists. Each participant will go through and record a time from each condition. Given the data provided, Can I answer the 5 questions provided?"
+        "In a Stroop task, participants are presented with a list of words, with each word displayed in a color of ink. The participant&apos;s task is to say out loud the color of the ink in which the word is printed. The task has two conditions: a congruent words condition, and an incongruent words condition. In the congruent words condition, the words being displayed are color words whose names match the colors in which they are printed: for example RED, BLUE. In the incongruent words condition, the words displayed are color words whose names do not match the colors in which they are printed: for example PURPLE, ORANGE. In each case, we measure the time it takes to name the ink colors in equally-sized lists. Each participant will go through and record a time from each condition. Given the data provided, Can I answer the 5 questions provided?"
     },
     {
       title: "Enron Fraud machine Learning in Jupyter",
