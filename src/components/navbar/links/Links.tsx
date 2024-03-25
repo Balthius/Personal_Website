@@ -16,15 +16,16 @@ const links = [
   {
     title: "Skills",
     path: "/skills"
-  },
+  }
   // {
   //   title: "Contact",
   //   path: "/contact"
   // },
-  {
-    title: "Projects",
-    path: "/projects"
-  }
+  //Doesnt work on Github pages, might as well not display it intil I find a solution.
+  // {
+  //   title: "Projects",
+  //   path: "/projects"
+  // }
 ];
 
 const Links = () => {
