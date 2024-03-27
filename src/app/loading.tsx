@@ -1,12 +1,5 @@
-
 const Loading = () => {
-    return (
-        <div>
-            Enter
-        </div>
-    );
-}
+  return <div>Loading</div>;
+};
 
-
-
-export default Loading
+export default Loading;

@@ -1,0 +1,8 @@
+.container {
+  margin: 24px 64px;
+}
+
+.container p {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
