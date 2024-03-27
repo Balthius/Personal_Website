@@ -22,7 +22,7 @@ const Position_Inputs = [
   {
     name: "Analyst",
     content:
-      "I understand how important it is that you find a person who is dedicated to boosting customer confidence as well as creating clean, self-documenting, and expandable applications, which I consider to be very powerful features of any successful business, especially in the perpetualfight against technical debt."
+      "I understand how important it is that you find a person who is dedicated to providing accurate data, and actionable answers for the company to use; I have a proven record in both regards, and I look forward to developing my talents even further."
   },
   {
     name: "Developer",
